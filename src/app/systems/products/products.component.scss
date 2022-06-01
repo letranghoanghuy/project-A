@@ -1,0 +1,37 @@
+.mat-toolbar {
+    width: auto;
+    color: #fff;
+    overflow: hidden;
+    margin: -20px;
+    margin-bottom: 50px;
+    background-color: #e53935;
+}
+
+.title-center {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    margin-top: 15px;
+
+    &-img-top {
+        width: 80%;
+        height: 50%;
+        display: block;
+        margin: 4% auto;
+    }
+
+    &-icon {
+        display: flex;
+        width: 30%;
+        float: right;
+        justify-content: space-between;
+
+        i {
+            cursor: pointer;
+        }
+    }
+}

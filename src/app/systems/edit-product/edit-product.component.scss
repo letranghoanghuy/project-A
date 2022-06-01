@@ -1,0 +1,44 @@
+.mat-toolbar {
+    width: auto;
+    color: #fff;
+    overflow: hidden;
+    margin: -20px;
+    margin-bottom: 50px;
+    background-color: #e53935;
+}
+
+.title-center {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #e53935;
+    text-align: center;
+    font-weight: bold;
+}
+
+.preview-img-container {
+    .label-upload {
+        padding: 5px;
+        border-radius: 3px;
+        background-color: #ddd;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    .preview-image {
+        width: 250px;
+        height: 100px;
+        background: center center no-repeat;
+        background-size: contain;
+    }
+}

@@ -1,0 +1,24 @@
+<mat-toolbar>
+    <mat-toolbar-row fxLayout="row">
+        <span class="title-center">Product list</span>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-12" *ngFor="let product of products">
+            <div class="card">
+                <img class="card-img-top" src="{{product.imageURL}}" alt="product image">
+                <div class="card-body">
+                    <h6 class="card-title">{{product.name}}</h6>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-eye text-success"></i>
+                        <i class="fa-solid fa-pen text-warning" (click)="editProduct(product.key)"></i>
+                        <i class="fa-solid fa-trash text-danger"
+                            (click)="deleteProduct(product.key,product.imageKey,product.imageName)"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

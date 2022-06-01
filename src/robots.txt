@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://Project-A.info/sitemap.xml
